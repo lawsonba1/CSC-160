@@ -10,6 +10,6 @@ class Main {
         System.out.println("Thanks! Now, please enter a adjective.");  // Output user input
         String adj1 = myObj.nextLine();
 
-        System.out.println();
+        System.out.println("You are a " +adj1 +noun1);
     }
 }
