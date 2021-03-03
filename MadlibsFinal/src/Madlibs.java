@@ -11,7 +11,7 @@ class Main {
         //that was sarcasm
         System.out.println("Please enter a noun.");
         String noun1 = myObj.nextLine();  // Read user input
-        System.out.println("Thanks! Now, please enter a adjective.");  // Output user input
+        System.out.println("Thanks! Now, please enter a action verb.");  // Output user input
         String adj1 = myObj.nextLine();
         System.out.println("Thanks! Now, please enter a adjective.");  // Output user input
         String adj2 = myObj.nextLine();

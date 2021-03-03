@@ -1,8 +1,12 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Magic8Ball {
 
     public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+
+
         //  String[] possibleAnswers = {"As I see it yes.", "Ask again later.", "Better not tell you now.",
         //       "Cannot predict now.", "Concentrate and ask again.", "Don’t count on it.", "It is certain.",
         //        "It is decidedly so.", "Most likely.", "My reply is no.", "My sources say no.", "Outlook not so good.",
@@ -17,7 +21,7 @@ public class Magic8Ball {
         //        System.out.println(randNum);
         //   }
         // }
-
+        boolean ploggers = true;
         int randomNumber;
         String[] posibleOutcomes = {"It is certain.",
                 "It is decidedly so.",
@@ -40,16 +44,28 @@ public class Magic8Ball {
                 " Outlook not so good.",
                 "Very doubtful"};
 
-        while (true) {
+        while (ploggers) {
             System.out.println("Ask me a question mortal.");
+            String question = reader.nextLine();
 
 
-                Random rand = new Random();
-                randomNumber = rand.nextInt(20);
-                String option = posibleOutcomes[randomNumber];
-                System.out.println(option);
+            Random rand = new Random();
+            randomNumber = rand.nextInt(20);
+            String option = posibleOutcomes[randomNumber];
+            System.out.println(option);
+
+            System.out.print("Do you have another question?");
+            String yesOrNo = reader.nextLine();
+            if (yesOrNo=="no"){
+                ploggers=false;
+            }
+
+
+
+
+
         }
     }
-
 }
+
 
