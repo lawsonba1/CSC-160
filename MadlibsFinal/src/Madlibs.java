@@ -12,7 +12,7 @@ class Main {
         System.out.println("Please enter a noun.");
         String noun1 = myObj.nextLine();  // Read user input
         System.out.println("Thanks! Now, please enter a action verb.");  // Output user input
-        String adj1 = myObj.nextLine();
+        String act1 = myObj.nextLine();
         System.out.println("Thanks! Now, please enter a adjective.");  // Output user input
         String adj2 = myObj.nextLine();
         System.out.println("Thanks! Now, please enter a adjective.");  // Output user input
@@ -40,6 +40,6 @@ class Main {
         System.out.println("Thanks! Now, please enter a adjective.");  // Output user input
         String adj14 = myObj.nextLine();
 
-        System.out.println("You are a " +adj1 +" "+adj2 +" "+adj3 +" "+adj4 +" "+adj5 +" "+adj6 +" "+adj7 +" "+adj8 +" "+adj9 +" "+adj10 +" "+adj11 +" "+adj12 +" "+adj13 +" "+adj14 +" " +noun1 +". Very discriptive.");
+        System.out.println("You are a " +act1 +" "+adj2 +" "+adj3 +" "+adj4 +" "+adj5 +" "+adj6 +" "+adj7 +" "+adj8 +" "+adj9 +" "+adj10 +" "+adj11 +" "+adj12 +" "+adj13 +" "+adj14 +" " +noun1 +". Very discriptive.");
     }
 }
