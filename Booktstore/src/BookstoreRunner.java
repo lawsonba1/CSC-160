@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class BookstoreRunner {
     private static Book[] availableBooks = new Book[10];
 
@@ -32,9 +35,17 @@ public class BookstoreRunner {
         availableBooks[9] = b10;
     }
     public static void listAvailableBooks(){
-
+        System.out.println("Welcome to Bardy's Bookstore! Here are the available books:");
+        for(int i = 0; i < availableBooks.length ;i++) {
+            System.out.println(availableBooks[i].getName());
+            System.out.println(availableBooks[i].getPrice());
+            System.out.println(availableBooks[i].getIsbn());
+        }
     }
     public static void determineBookSelection(){
+        Scanner bookPurchase = new Scanner(System.in);
 
+        System.out.println("Is there a book you would like to purchase");
+        String boughtBook = bookPurchase.nextLine();
     }
 }
