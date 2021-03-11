@@ -45,7 +45,10 @@ public class BookstoreRunner {
     public static void determineBookSelection(){
         Scanner bookPurchase = new Scanner(System.in);
 
-        System.out.println("Is there a book you would like to purchase");
-        String boughtBook = bookPurchase.nextLine();
+        System.out.println("Is there a book you would like to purchase? Yes or No");
+        String yesOrNo = bookPurchase.nextLine();
+        if(yesOrNo.equalsIgnoreCase("yes")) {
+
+        }
     }
 }
